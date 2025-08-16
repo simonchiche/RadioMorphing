@@ -1,0 +1,16 @@
+Primary: Iron # Proton or Iron
+Energy: 1.0 # EeV
+Zenith: 74.76 # degrees cosmic ray convention (0 is vertical, 90 is horizontal)
+Azimuth: 0 # degrees (0 is propagation towards East, angle is counted positively towards North) 
+Altitude: 1086 # altitude above sea level, in meters
+Fluctuations: False # Boolean to enable or not shower-to-shower fluctations
+
+
+
+
+
+
+
+
+
+
