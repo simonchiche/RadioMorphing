@@ -380,9 +380,11 @@ def CorrectPlane(IndexAll, DsimAll, PathAll, TargetAntennas, \
     #print(IndexAllCorrected, DsimAll)
     ##TODO: add to lyon
     VoidPlanes = np.array(VoidPlanes)
-    for k in range(len(VoidPlanes)):
-        DsimAll =  np.delete(DsimAll, [k])
-        PathAll =  np.delete(PathAll, [k])
+    print("VoidPlanes", VoidPlanes)
+    # We remove the planes that do not have any antennas associated
+    for idx in sorted(VoidPlanes.tolist(), reverse=True):
+        DsimAll = np.delete(DsimAll, idx)
+        PathAll = np.delete(PathAll, idx)
         
     TestOnePlane =  False
     if(TestOnePlane):
